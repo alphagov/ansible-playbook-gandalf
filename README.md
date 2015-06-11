@@ -15,6 +15,8 @@ Role Variables
 
 `gandalf_git_template_dir` directory where git templates are stored.
 
+`tsuru_api_endpoint` uri to tsuru api, defaults to `http://localhost:8080`
+
 Dependencies
 ------------
 

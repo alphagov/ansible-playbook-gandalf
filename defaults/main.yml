@@ -3,3 +3,4 @@
 
 gandalf_port: 8080
 gandalf_git_template_dir: /home/git/bare-template
+tsuru_api_endpoint: http://localhost:8080

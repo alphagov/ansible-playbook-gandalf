@@ -1,0 +1,10 @@
+---
+- hosts: all
+  sudo: yes
+  vars:
+    - gandalf_host_internal: localhost
+    - mongodb_host: localhost
+    - mongodb_port: '27001'
+    - gandalf_host_external: localhost
+  roles:
+    - .

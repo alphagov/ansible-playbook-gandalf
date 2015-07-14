@@ -1,9 +1,2 @@
 ---
 # vars file for gandalf
-
-packages:
-  - curl
-  - python-software-properties
-  - gandalf-server
-  - archive-server
-

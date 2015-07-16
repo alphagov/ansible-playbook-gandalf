@@ -6,7 +6,11 @@
 
 - name: Install packages.
   apt: update_cache=true name="{{ item }}"
-  with_items: packages
+  with_items:
+    - curl
+    - python-software-properties
+    - "{% if gandalf_server_version is defined %}gandalf-server={{ gandalf_server_version }}{% else %}gandalf-server{% endif %}"
+    - "{% if archive_server_version is defined %}archive-server={{ archive_server_version }}{% else %}archive-server{% endif %}"
 
 - name: Create git hook directory.
   file: path={{ gandalf_git_template_dir }}/hooks state=directory owner=git group=git recurse=yes

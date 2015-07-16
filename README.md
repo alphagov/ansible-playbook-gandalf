@@ -17,6 +17,10 @@ Role Variables
 
 `tsuru_api_endpoint` uri to tsuru api, defaults to `http://localhost:8080`
 
+`archive_server_version` version of the archive server you wish to install, defaults to `latest`
+
+`gandalf_server_version` version of the gandalf server you wish to install, defaults to `latest`
+
 Dependencies
 ------------
 

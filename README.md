@@ -21,6 +21,8 @@ Role Variables
 
 `gandalf_server_version` version of the gandalf server you wish to install, defaults to `latest`
 
+`tsuru_repo` repo argument for Ansible's [`apt_repository`](http://docs.ansible.com/ansible/apt_repository_module.html) module, defaults to `ppa:tsuru/ppa`
+
 Dependencies
 ------------
 
